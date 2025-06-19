@@ -156,6 +156,7 @@
   display: grid;
   grid-template-columns: 1fr;
   background-color: #137334;
+  background: linear-gradient(90deg, rgb(20, 76, 37) 0%, rgb(20, 111, 50) 25%, rgb(19, 116, 52) 50%, rgb(20, 111, 50) 75%, rgb(20, 76, 37) 100%);
 }
 #es-rc #es-rc-content .es-stripe__logo {
   padding: 12px;
@@ -166,6 +167,9 @@
 @media (min-width: 768px) {
   #es-rc #es-rc-content .es-stripe {
     grid-template-columns: 1fr 1fr;
+  }
+  #es-rc #es-rc-content .es-stripe__logo {
+    max-width: 200px;
   }
 }
 #es-rc #es-rc-content .es-safe {
@@ -207,7 +211,7 @@
     padding: 32px;
   }
   #es-rc #es-rc-content .es-safe__copy {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 #es-rc #es-rc-content .es-adv {
@@ -254,6 +258,11 @@
   max-width: 160px;
   padding: 1rem 0.5rem;
 }
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-adv .es-adv__ico {
+    max-width: 130px;
+  }
+}
 #es-rc #es-rc-content .es-adv .es-adv__image {
   width: 80%;
 }
@@ -265,7 +274,7 @@
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content .es-adv .es-adv__desc {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 #es-rc #es-rc-content .es-adv .es-adv__inside {
@@ -290,14 +299,15 @@
 #es-rc #es-rc-content .es-quote__copy {
   color: #ffffff;
   font-size: 18px;
-  padding-top: 16px;
-  text-transform: uppercase;
+  padding-top: 32px;
 }
 #es-rc #es-rc-content .es-quote__copy--bold {
   font-weight: 800;
 }
 #es-rc #es-rc-content .es-quote__copy--big {
-  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
   line-height: 0.4;
 }
 #es-rc #es-rc-content .es-quote__kv {
@@ -305,6 +315,9 @@
 }
 #es-rc #es-rc-content .es-quote__kv img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content .es-quote {
@@ -315,11 +328,12 @@
     padding: 32px;
   }
   #es-rc #es-rc-content .es-quote__copy {
-    font-size: 28px;
+    font-size: 24px;
   }
   #es-rc #es-rc-content .es-quote__copy--big {
-    font-size: 60px;
+    font-size: 150px;
     line-height: 0.4;
+    margin-bottom: -50px;
   }
 }
 #es-rc #es-rc-content .es-shade {
@@ -332,14 +346,39 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 8px;
   row-gap: 16px;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-shade .es-shade__icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+  }
+  #es-rc #es-rc-content .es-shade .es-shade__icons::before {
+    content: "";
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-shade .es-shade__icons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-shade .es-shade__icons {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 #es-rc #es-rc-content .es-shade .es-shade-ico {
   display: flex;
   flex-direction: column;
   max-width: 230px;
   padding: 2px;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-shade .es-shade-ico {
+    max-width: unset;
+  }
 }
 #es-rc #es-rc-content .es-shade .es-shade-ico__desc {
   color: #ffffff;
@@ -374,4 +413,4 @@
 #es-rc #es-rc-content .es-footnotes__list {
   list-style-type: none;
   padding: 20px 10px;
-}
+}/*# sourceMappingURL=styles.css.map */
