@@ -175,7 +175,19 @@ $transition: all 0.3s ease-in-out;
         width: 100%;
       }
     }
-
+    &__badge {
+      position: absolute;
+      top: 4%;
+      left: 50%;
+      transform: translateX(-50%);
+      outline: 3px solid $color-yellow;
+      border-radius: 50px;
+      &__text {
+        color: $color-yellow;
+        font-size: 24px;
+        padding: 8px 28px;
+      }
+    }
     &__pack {
       position: relative;
 

@@ -99,6 +99,19 @@
 #es-rc #es-rc-content .es-kv__people img {
   width: 100%;
 }
+#es-rc #es-rc-content .es-kv__badge {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: 3px solid #ffd822;
+  border-radius: 50px;
+}
+#es-rc #es-rc-content .es-kv__badge__text {
+  color: #ffd822;
+  font-size: 24px;
+  padding: 8px 28px;
+}
 #es-rc #es-rc-content .es-kv__pack {
   position: relative;
 }
