@@ -354,6 +354,62 @@
   margin: 0 auto;
   text-align: center;
 }
+#es-rc #es-rc-content .es-shade__pack {
+  position: relative;
+}
+#es-rc #es-rc-content .es-shade__pack__text {
+  color: #ffffff;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-shade__pack__image {
+    width: 70%;
+  }
+  #es-rc #es-rc-content .es-shade__pack__text {
+    text-align: left;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 22px;
+  }
+  #es-rc #es-rc-content .es-shade__pack__text--1 {
+    position: absolute;
+    top: 23%;
+    left: 61%;
+  }
+  #es-rc #es-rc-content .es-shade__pack__text--2 {
+    position: absolute;
+    top: 38%;
+    left: 61%;
+  }
+  #es-rc #es-rc-content .es-shade__pack__text--3 {
+    position: absolute;
+    top: 47%;
+    left: 61%;
+  }
+  #es-rc #es-rc-content .es-shade__pack__title {
+    position: absolute;
+    left: 47%;
+    bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-shade__pack__title {
+    left: 58%;
+    bottom: 21%;
+  }
+  #es-rc #es-rc-content .es-shade__pack__title .es-title {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-shade__pack__text {
+    font-size: 28px;
+  }
+  #es-rc #es-rc-content .es-shade__pack__title .es-title {
+    font-size: 28px;
+  }
+}
 #es-rc #es-rc-content .es-shade .es-shade__icons {
   padding: 2rem 0.5rem;
   display: flex;

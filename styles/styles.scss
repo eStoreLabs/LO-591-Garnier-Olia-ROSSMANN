@@ -481,6 +481,64 @@ $transition: all 0.3s ease-in-out;
     margin: 0 auto;
     text-align: center;
 
+    &__pack {
+      position: relative;
+      &__text {
+        color: $color-bg;
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+      @media (min-width: $media-breakpoint-sm) {
+        &__image {
+          width: 70%;
+        }
+        &__text {
+          text-align: left;
+          width: max-content;
+          font-size: 22px;
+          &--1 {
+            position: absolute;
+            top: 23%;
+            left: 61%;
+          }
+          &--2 {
+            position: absolute;
+            top: 38%;
+            left: 61%;
+          }
+          &--3 {
+            position: absolute;
+            top: 47%;
+            left: 61%;
+          }
+        }
+        &__title {
+          position: absolute;
+          left: 47%;
+          bottom: 0;
+        }
+      }
+      @media (min-width: $media-breakpoint-md) {
+        &__title {
+          left: 58%;
+          bottom: 21%;
+          .es-title {
+            font-size: 24px;
+          }
+        }
+      }
+      @media (min-width: $media-breakpoint-lg) {
+        &__text {
+          font-size: 28px;
+        }
+        &__title {
+          .es-title {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+
     .es-shade__icons {
       padding: 2rem 0.5rem;
       display: flex;
