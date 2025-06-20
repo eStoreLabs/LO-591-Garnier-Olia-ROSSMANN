@@ -340,7 +340,6 @@ $transition: all 0.3s ease-in-out;
   .es-adv {
     position: relative;
     background-color: black;
-    // padding-top: 4rem;
     margin: 0 auto;
     text-align: center;
 
@@ -405,7 +404,27 @@ $transition: all 0.3s ease-in-out;
 
     .es-adv__inside {
       margin-top: 2rem;
-      background-color: $color-yellow;
+      background: linear-gradient(180deg, $color-main 60%, $color-yellow 60%);
+      &__text {
+        color: $color-bg;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-block: 16px;
+      }
+      &__img {
+        width: 60%;
+        margin: auto;
+      }
+      @media (min-width: $media-breakpoint-sm) {
+        background: linear-gradient(180deg, $color-main 50%, $color-yellow 50%);
+        &__text {
+          flex-direction: row;
+          justify-content: space-around;
+          margin-left: 8%;
+          width: 74%;
+        }
+      }
     }
   }
 
